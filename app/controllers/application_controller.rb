@@ -32,4 +32,9 @@ class ApplicationController < Sinatra::Base
     redirect to "/articles/#{@article.id}"
   end
 
+  get '/articles/:id/edit' do
+
+    erb :edit
+  end
+
 end
